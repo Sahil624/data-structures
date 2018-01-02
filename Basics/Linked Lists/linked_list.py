@@ -105,3 +105,18 @@ class Linked_list:
 		temp.next = None
  
 		temp.next = next
+
+	def length(self):
+		temp = self.head
+
+		if temp is None:
+			print("List is Empty")
+			return 0
+
+		i = 0 
+
+		while(temp is not None):
+			temp = temp.next
+			i = i + 1
+
+		return i
