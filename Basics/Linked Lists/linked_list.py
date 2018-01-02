@@ -76,3 +76,32 @@ class Linked_list:
 		prev.next = temp.next
  
 		temp = None
+
+	def delete_this_node(self,key,no):
+		temp = self.head
+
+		if temp is None:
+			print("List Is Empty")
+			return
+
+		if (key == 0):
+			self.head = temp.next
+			temp = None
+
+		for i in range(0,key-1):
+			temp = temp.next
+			if temp is None:
+				break
+
+		if temp is None:
+			return
+
+		if (temp.next is None):
+			return
+
+		next = temp.next.next
+ 
+        # Unlink the node from linked list
+		temp.next = None
+ 
+		temp.next = next
