@@ -4,7 +4,7 @@ if __name__ == '__main__':
 
 	st = Stack()
 
-	expr = '10 2 + 6 *'
+	expr = '2 3 1 * + 9 -'
 
 	arr = expr.split(' ')
 
@@ -14,8 +14,8 @@ if __name__ == '__main__':
 			print('pushing',i)
 		else:
 
-			a = st.pop()
 			b = st.pop()
+			a = st.pop()
 
 			print(a,b,i)
 
