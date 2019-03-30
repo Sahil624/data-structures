@@ -1,6 +1,6 @@
 # Data Structures
 
-This repo contains implementation and problems based on variuos data structures.
+This repo contains implementation and problems based on variuos data structures in **Python**.
 
 ### Want to contribute?
 
